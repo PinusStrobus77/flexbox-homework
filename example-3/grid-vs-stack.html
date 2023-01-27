@@ -21,6 +21,12 @@
         </ul>
       </nav>
     
+      <div style="margin:20px;">
+      <span>layout: </span>
+      <a href="" class="stack">Stack</a>
+      <a href=""class="grid">Grid</a>
+      </div>
+
       <section id="blocks">
         <article>
           <h2>I pity the fool...</h2>
@@ -49,6 +55,14 @@
       </section>
       
     </div>
+    <script>
+$("a.stack").on("click", function()){
+  $("articles").addClass("stack")
+});
+$("a.stack").on("click", function()){
+  $("articles").removeClass("stack")
+});
     
+    </script>
   </body>
 </html>
